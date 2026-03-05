@@ -31,12 +31,16 @@
 - [x] Units Generation (COMPLETED - 2026-03-05T14:25:00+09:00)
 
 ### CONSTRUCTION PHASE
-- [ ] Functional Design - Unit 3 Database (IN PROGRESS)
-- [ ] NFR Requirements (EXECUTE, per-unit)
-- [ ] NFR Design (EXECUTE, per-unit)
-- [ ] Infrastructure Design (EXECUTE, per-unit)
-- [ ] Code Generation (EXECUTE, per-unit)
-- [ ] Build and Test (EXECUTE)
+- [ ] Functional Design - Unit 1 Database (PENDING)
+- [ ] Code Generation - Unit 1 Database (PENDING)
+- [ ] Functional Design - Unit 2 Backend (PENDING)
+- [ ] NFR Requirements - Unit 2 Backend (PENDING)
+- [ ] NFR Design - Unit 2 Backend (PENDING)
+- [ ] Infrastructure Design - Unit 2 Backend (PENDING)
+- [ ] Code Generation - Unit 2 Backend (PENDING)
+- [ ] Functional Design - Unit 3 Frontend (PENDING)
+- [ ] Code Generation - Unit 3 Frontend (PENDING)
+- [ ] Build and Test (PENDING)
 
 ### OPERATIONS PHASE
 - [ ] Operations (PLACEHOLDER)

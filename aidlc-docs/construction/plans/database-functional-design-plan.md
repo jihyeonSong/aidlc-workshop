@@ -33,18 +33,18 @@ X) Other (please describe after [Answer]: tag below)
 ## 생성 실행 계획
 
 ### Step 1: 도메인 엔티티 상세 설계
-- [ ] 각 엔티티의 컬럼, 타입, 제약조건 정의
-- [ ] 엔티티 간 관계(FK) 정의
-- [ ] 인덱스 설계
-- [ ] `domain-entities.md` 생성
+- [x] 각 엔티티의 컬럼, 타입, 제약조건 정의
+- [x] 엔티티 간 관계(FK) 정의
+- [x] 인덱스 설계
+- [x] `domain-entities.md` 생성
 
 ### Step 2: 비즈니스 규칙 정의
-- [ ] 데이터 검증 규칙 (필수 필드, 범위, 형식)
-- [ ] 참조 무결성 규칙
-- [ ] 상태 전이 규칙 (주문 상태)
-- [ ] `business-rules.md` 생성
+- [x] 데이터 검증 규칙 (필수 필드, 범위, 형식)
+- [x] 참조 무결성 규칙
+- [x] 상태 전이 규칙 (주문 상태)
+- [x] `business-rules.md` 생성
 
 ### Step 3: 비즈니스 로직 모델
-- [ ] 시드 데이터 구조 정의
-- [ ] 마이그레이션 전략 정의
-- [ ] `business-logic-model.md` 생성
+- [x] 시드 데이터 구조 정의
+- [x] 마이그레이션 전략 정의
+- [x] `business-logic-model.md` 생성

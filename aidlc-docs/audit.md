@@ -201,3 +201,70 @@ AI-DLC 워크플로우를 시작해봅시다."
 **Context**: INCEPTION 완료, CONSTRUCTION PHASE 시작
 
 ---
+
+## Functional Design (Database) - Answers Review & Generation Start
+**Timestamp**: 2026-03-05T14:35:00+09:00
+**User Input**: "작성했어 검토해줘." → "진행해줘"
+**AI Response**: 답변 확인 (Q1:A 매일리셋 일련번호, Q2:A JSON 직렬화), 모순 없음. 산출물 생성 시작.
+**Context**: CONSTRUCTION - Functional Design Unit 3 (Database)
+
+---
+
+## Functional Design (Database) - Artifacts Generation Complete
+**Timestamp**: 2026-03-05T14:40:00+09:00
+**User Input**: "진행해줘" (컨텍스트 전환 후 이어서 진행)
+**AI Response**: Database Functional Design 산출물 3개 생성 완료, 계획 체크박스 업데이트 완료
+**Context**: CONSTRUCTION - Functional Design Unit 3 (Database) Step 6-7
+
+### Generated Artifacts
+- `aidlc-docs/construction/database/functional-design/domain-entities.md` - 9개 엔티티 상세 설계 (컬럼, 타입, 제약조건, 인덱스, ERD)
+- `aidlc-docs/construction/database/functional-design/business-rules.md` - 검증규칙, 참조무결성, 상태전이, 주문번호, 세션규칙, 멀티테넌트
+- `aidlc-docs/construction/database/functional-design/business-logic-model.md` - 시드 데이터 구조, 마이그레이션 전략 (Flyway), 주문번호 생성 로직, 세션 종료 데이터 이동 로직
+
+### Extension Compliance
+- Security Baseline: Compliant (bcrypt 해싱, 계정 잠금, 멀티테넌트 격리, 입력 검증)
+
+---
+
+## Units Generation - Redesign (역할 기반 재설계)
+**Timestamp**: 2026-03-05T14:50:00+09:00
+**User Input**: "CONSTRUCTION PHASE를 다시 할건데 INCEPTION PHASE > Units Generation 단계 생성할때부터 아까 정의한 4명 역할 기준으로 분배해서 다시 진행해줘."
+**AI Response**: Units Generation 산출물 3개를 4명 역할(PO, Developer, DevOps, QA/기획자) 기준으로 재설계. Unit 번호 재정렬 (DB→Unit1, Backend→Unit2, Frontend→Unit3). 각 CONSTRUCTION 단계별 역할 참여 매트릭스 추가. CONSTRUCTION PHASE 상태 리셋.
+**Context**: INCEPTION - Units Generation 재설계, CONSTRUCTION PHASE 리셋
+
+### 주요 변경사항
+- Unit 번호 재정렬: Unit 1(Database), Unit 2(Backend), Unit 3(Frontend)
+- 역할별 CONSTRUCTION 단계 참여 매트릭스 추가 (unit-of-work.md)
+- 역할별 단계 참여 상세 (unit-of-work-dependency.md)
+- 스토리별 리뷰 담당 역할 매핑 (unit-of-work-story-map.md)
+- CONSTRUCTION PHASE 상태 리셋 (aidlc-state.md)
+- 기존 Database Functional Design 산출물은 유지 (재활용 가능)
+
+### Updated Artifacts
+- `aidlc-docs/inception/application-design/unit-of-work.md` - 역할 기반 재설계
+- `aidlc-docs/inception/application-design/unit-of-work-dependency.md` - 역할별 참여 상세
+- `aidlc-docs/inception/application-design/unit-of-work-story-map.md` - 리뷰 담당 매핑
+
+---
+
+## CONSTRUCTION PHASE - 역할별 프롬프트 생성
+**Timestamp**: 2026-03-05T14:55:00+09:00
+**User Input**: "이 단계를 이제 4명(PO, Developer, DevOps, 기획+QA)가 나누어서 할건데 각자 나누어서 쓸 수 있는 프롬프트를 생성해서 만들어줘. 프롬프트에 git branch로 무엇을 쓸건지도 포함해서 생성해줘. 산출물은 각 4명의 프롬프트 마크다운 파일이겠지?"
+**AI Response**: 4명 역할별 CONSTRUCTION PHASE 프롬프트 파일 4개 생성 완료
+**Context**: CONSTRUCTION PHASE 준비 - 역할별 프롬프트 생성
+
+### Generated Artifacts
+- `aidlc-docs/construction/prompts/prompt-po.md` - PO: 비즈니스 검증, UX 검증, 기능 검증
+- `aidlc-docs/construction/prompts/prompt-developer.md` - Developer: DB/Backend 설계+코드, 코드 리뷰
+- `aidlc-docs/construction/prompts/prompt-devops.md` - DevOps: NFR/인프라 설계, CI/CD, 배포
+- `aidlc-docs/construction/prompts/prompt-qa.md` - QA/기획자: Frontend 설계+코드, 테스트 전략
+
+### Git Branch 전략
+- `construction/po-review` - PO 리뷰용
+- `construction/unit1-database` - Developer DB 작업
+- `construction/unit2-backend` - Developer Backend 작업
+- `construction/unit3-frontend` - QA/기획자 Frontend 작업
+- `construction/infra-devops` - DevOps 인프라 작업
+- `construction/qa-test` - QA 테스트 작업
+
+---
