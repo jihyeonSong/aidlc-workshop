@@ -46,24 +46,24 @@ X) Other (please describe after [Answer]: tag below)
 ## 설계 실행 계획
 
 ### Step 1: 컴포넌트 정의
-- [ ] 프론트엔드 컴포넌트 식별 (페이지, 공통 컴포넌트)
-- [ ] 백엔드 컴포넌트 식별 (컨트롤러, 서비스, 리포지토리)
-- [ ] 데이터베이스 엔티티 식별
-- [ ] `aidlc-docs/inception/application-design/components.md` 생성
+- [x] 프론트엔드 컴포넌트 식별 (페이지, 공통 컴포넌트)
+- [x] 백엔드 컴포넌트 식별 (컨트롤러, 서비스, 리포지토리)
+- [x] 데이터베이스 엔티티 식별
+- [x] `aidlc-docs/inception/application-design/components.md` 생성
 
 ### Step 2: 컴포넌트 메서드 정의
-- [ ] 백엔드 API 엔드포인트 시그니처 정의
-- [ ] 서비스 레이어 메서드 시그니처 정의
-- [ ] 리포지토리 메서드 시그니처 정의
-- [ ] `aidlc-docs/inception/application-design/component-methods.md` 생성
+- [x] 백엔드 API 엔드포인트 시그니처 정의
+- [x] 서비스 레이어 메서드 시그니처 정의
+- [x] 리포지토리 메서드 시그니처 정의
+- [x] `aidlc-docs/inception/application-design/component-methods.md` 생성
 
 ### Step 3: 서비스 레이어 설계
-- [ ] 서비스 정의 및 책임 할당
-- [ ] 서비스 간 오케스트레이션 패턴 정의
-- [ ] `aidlc-docs/inception/application-design/services.md` 생성
+- [x] 서비스 정의 및 책임 할당
+- [x] 서비스 간 오케스트레이션 패턴 정의
+- [x] `aidlc-docs/inception/application-design/services.md` 생성
 
 ### Step 4: 컴포넌트 의존성 설계
-- [ ] 의존성 매트릭스 작성
-- [ ] 통신 패턴 정의 (REST, SSE)
-- [ ] 데이터 흐름 다이어그램 작성
-- [ ] `aidlc-docs/inception/application-design/component-dependency.md` 생성
+- [x] 의존성 매트릭스 작성
+- [x] 통신 패턴 정의 (REST, SSE)
+- [x] 데이터 흐름 다이어그램 작성
+- [x] `aidlc-docs/inception/application-design/component-dependency.md` 생성
