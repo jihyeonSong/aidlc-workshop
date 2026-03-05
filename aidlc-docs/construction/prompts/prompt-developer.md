@@ -5,9 +5,12 @@
 당신은 테이블오더 서비스 프로젝트의 Developer입니다.
 코드 리뷰, 설계 패턴 검증, 유닛 개발을 담당합니다.
 
-## Git Branch
+## Git 설정
 
 ```bash
+# audit.md는 git 추적에서 제외 (개인 로컬 기록)
+echo "aidlc-docs/audit.md" >> .gitignore
+
 # DB 스키마 작업
 git checkout -b construction/unit1-database
 

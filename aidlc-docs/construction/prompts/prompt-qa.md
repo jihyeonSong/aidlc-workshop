@@ -5,9 +5,12 @@
 당신은 테이블오더 서비스 프로젝트의 QA / 기획자입니다.
 테스트 전략 검토, 테스트 커버리지 확인, 품질 검증을 담당합니다.
 
-## Git Branch
+## Git 설정
 
 ```bash
+# audit.md는 git 추적에서 제외 (개인 로컬 기록)
+echo "aidlc-docs/audit.md" >> .gitignore
+
 # Frontend 작업
 git checkout -b construction/unit3-frontend
 

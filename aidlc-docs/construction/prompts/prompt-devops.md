@@ -5,9 +5,13 @@
 당신은 테이블오더 서비스 프로젝트의 DevOps 엔지니어입니다.
 인프라 설계 검증, CI/CD 파이프라인, 배포 전략을 담당합니다.
 
-## Git Branch
+## Git 설정
 
 ```bash
+# audit.md는 git 추적에서 제외 (개인 로컬 기록)
+echo "aidlc-docs/audit.md" >> .gitignore
+
+# 브랜치 생성
 git checkout -b construction/infra-devops
 ```
 
